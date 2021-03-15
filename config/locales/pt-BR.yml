@@ -1,0 +1,22 @@
+---
+pt-BR:
+  activerecord:
+    attributes:
+      spree/prototype:
+        name: Nome
+    models:
+      # LegacyUser maps to this model_name so we want to provide translations for it
+      spree/prototype:
+        one: Protótipo
+        other: Protótipos
+
+  spree:
+    admin:
+      tab:
+        prototypes: Protótipos
+    back_to_prototypes_list: Voltar para Lista de Protótipos
+    editing_prototype: Editando Protótipo
+    new_prototype: Novo Protótipo
+    prototype: Protótipo
+    prototypes: Protótipos
+    select_from_prototype: Selecionar de Protótipo

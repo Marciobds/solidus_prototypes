@@ -1,3 +1,12 @@
+<% admin_breadcrumb(link_to plural_resource_name(Spree::Product), spree.admin_products_path) %>
+<% admin_breadcrumb(link_to plural_resource_name(Spree::Prototype), spree.admin_prototypes_path) %>
+
+<% content_for :page_actions do %>
+  <li>
+    <%= link_to_with_icon 'arrow_left', I18n.t(:back_to_prototypes_list, scope: :spree), admin_prototypes_path, class: 'btn btn-primary' %>
+  </li>
+<% end %>
+
 <%= render :partial => 'spree/shared/error_messages', :locals => { :target => @prototype } %>
 
 <%= form_for [:admin, @prototype] do |f| %>
